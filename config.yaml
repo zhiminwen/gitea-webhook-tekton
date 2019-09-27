@@ -1,0 +1,9 @@
+hooks:
+  - repo: wenzm/hello-springboot
+    secret: secretkey
+    taskinfo:
+      namespace: demo
+      task: my-appsody-build
+      gitResourceName: hello-springboot-git-source
+      imageResourceName: hello-springboot-registry-image
+      
