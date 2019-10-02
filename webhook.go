@@ -53,6 +53,8 @@ func action(hook HookAction) {
 }
 
 func webhook(w http.ResponseWriter, r *http.Request) {
+	defer r.Body.Close()
+
 	event := r.Header.Get("X-Gitea-Event")
 
 	if event != "push" {
