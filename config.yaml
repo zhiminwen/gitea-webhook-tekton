@@ -3,7 +3,6 @@ hooks:
     secret: secretkey
     taskinfo:
       namespace: demo
-      task: my-appsody-build
-      gitResourceName: hello-springboot-git-source
-      imageResourceName: hello-springboot-registry-image
-      
+      taskrefname: my-appsody-build
+      gitsourceresourcename: hello-springboot-git-source
+      dockerimageresourcename: hello-springboot-registry-image
